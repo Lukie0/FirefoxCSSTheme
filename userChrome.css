@@ -1,0 +1,90 @@
+:root {
+  --accent-color: #ffffff;
+  --bg-dark: #202020;
+  --bg-darker: #202020;
+  --tab-outline-color: #49734b;
+  --tab-selected-outline-color: #87cf3e;
+}
+
+#navigator-toolbox,
+#TabsToolbar,
+#nav-bar {
+  background-color: var(--bg-dark) !important;
+  color: var(--accent-color) !important;
+  font-family: "JetBrains Mono", "Ubuntu Mono", monospace !important;
+}
+
+.tabbrowser-tab[selected] .tab-background,
+.tabbrowser-tab[multiselected="true"] .tab-background {
+  background-color: #2d2d2d !important;
+  background-image: none !important;
+  border: 2px solid #49734b !important;
+  outline: 1px solid #49734b !important;
+  outline-offset: none !important;
+  box-shadow: none !important;
+  border-radius: 8px !important;
+}
+
+.tabbrowser-tab:not([selected]):not([multiselected]) .tab-background {
+  border: 2px solid color-mix(in srgb, currentcolor 25%, transparent) !important;
+}
+
+#navigator-toolbox,
+#TabsToolbar,
+#nav-bar,
+#PersonalToolbar {
+  background-color: var(--bg-dark) !important;
+  background-image: none !important;
+  color: var(--accent-color) !important;
+  font-family: "JetBrains Mono", "Ubuntu Mono", monospace !important;
+  border-bottom: none !important;
+}
+
+.tab-close-button {
+    padding: 2px !important;
+    margin: 2px !important;
+}
+
+.tab-close-button {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.tab-throbber[busy]:not([progress])::before {
+  fill: #AFAFAFFF !important;
+}
+
+.tab-throbber[busy][progress]::before {
+  fill: #70b974 !important;
+  opacity: 1 !important;
+}
+
+.tab-loading-burst::before {
+  filter: hue-rotate(260deg) saturate(1.2) !important;
+}
+
+
+.tab-label {
+  color: var(--accent-color) !important;
+}
+
+
+#urlbar-background {
+  background-color: #202020 !important;
+  border: 1px solid rgba(135, 207, 62, 0.4) !important;
+  border-radius: 4px !important;
+}
+
+#urlbar[focused="true"] > #urlbar-background,
+#urlbar[focused="true"] > .urlbar-background,
+#urlbar-background,
+.urlbar-background {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#urlbar-input {
+  color: var(--accent-color) !important;
+}
+
